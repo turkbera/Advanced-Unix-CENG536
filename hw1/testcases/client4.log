@@ -1,0 +1,38 @@
+Client 0: Connecting to Unix domain socket at '/tmp/supdemserv.sock'
+Client 0: Running script 'testcase4.txt'
+OK
+OK
+Your demand at (0,50), [3,3,3] is fulfilled by a supply at (25,20).
+OK
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 1 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+      0|     50|    3|    3|    3|    200|
+OK
+Your demand at (0,50), [5,0,0] is fulfilled by a supply at (99,99).
+OK
+OK
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 6 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+     10|     10|    1|    1|    1|    200|
+      0|     50|    3|    3|    3|    200|
+     99|     99|    5|   10|   10|    200|
+     50|     50|    5|    5|    5|    200|
+      0|     50|    5|    0|    0|    200|
+      0|     50|    5|    0|    0|    200|
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 3 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+      0|     50|    3|    3|    3|    200|
+      0|     50|    5|    0|    0|    200|
+      0|     50|    5|    0|    0|    200|

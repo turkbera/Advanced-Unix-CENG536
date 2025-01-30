@@ -1,0 +1,411 @@
+Accepted client connection 4
+Accepted client connection 4
+Agent process started for client 4
+Next agent id: 0
+Accepted client connection 4
+Agent process started for client 4
+Next agent id: 1
+DEBUG: Waiting for notification (agent 0) on fd 4
+Accepted client connection 4
+Agent process started for client 4
+Next agent id: 2
+DEBUG: Waiting for notification (agent 1) on fd 4
+DEBUG: Waiting for notification (agent 2) on fd 4
+Agent process started for client 4
+Next agent id: 3
+DEBUG: Waiting for notification (agent 3) on fd 4
+AGENT: Command: move 20 20
+AGENT: Command: move 99 99
+AGENT: Command: move 10 10
+Received command: move 20 20
+Received command: move 99 99
+Received command: move 10 10
+AGENT: Handled command: move 20 20
+AGENT: Handled command: move 99 99
+AGENT: Command: move 0 50
+AGENT: Command: demand 2 2 2
+AGENT: Command: demand 10 10 10
+AGENT: Handled command: move 10 10
+Received command: demand 2 2 2
+Received command: demand 10 10 10
+AGENT: Command: watch 180
+Received command: move 0 50
+DEBUG: Adding demand for agent 1 with resources [2,2,2]
+Received command: watch 180
+DEBUG: Checking matches for demand ID 0 from agent 1
+AGENT: Handled command: demand 2 2 2
+AGENT: Command: watch 180
+Received command: watch 180
+AGENT: Handled command: watch 180
+DEBUG: Adding demand for agent 2 with resources [10,10,10]
+AGENT: Command: move 25 20
+DEBUG: Checking matches for demand ID 1 from agent 2
+Received command: move 25 20
+AGENT: Handled command: demand 10 10 10
+AGENT: Command: supply 200 10 10 10
+Received command: supply 200 10 10 10
+DEBUG: Adding supply for agent 2 at (99,99) with distance 200 and resources [10,10,10]
+DEBUG: Checking matches for supply ID 0 from agent 2
+DEBUG: Checking compatibility between demand 0 and supply 0
+DEBUG: Distance check: 1, Resource checks: [1,1,1], Agent check: 1
+DEBUG: Found match! Supplier agent: -1, Demander agent: -1, was it demand: 0
+DEBUG: Sending notifications for match
+Noitf queue lock for agent 2
+Noitf queue release for agent 2
+DEBUG: Checking watch for agent 1 - watch distance: 180, manhattan distance: 158
+DEBUG: Sending notification for supply added
+Noitf queue lock for agent 1
+DEBUG: Got the notification (agent 2) on fd 4
+DEBUG: Got the notification (agent 1) on fd 4
+DEBUG: Notifying client (agent 1) on fd 4
+DEBUG: got the queue lock Notifying client (agent 1) on fd 4
+DEBUG: Notifying client (agent 2) on fd 4
+DEBUG: Processing notification type 0 for agent 1
+DEBUG: Sending message to client 1: Your demand at (20,20), [2,2,2] is fulfilled by a client at (99,99).
+DEBUG: got the queue lock Notifying client (agent 2) on fd 4
+
+DEBUG: Processing notification type 1 for agent 2
+DEBUG: Processing notification type 3 for agent 1
+DEBUG: Sending message to client 1: A supply [10,10,10] is inserted at (99,99).
+
+DEBUG: Done processing notifications for agent 1
+DEBUG: Sending message to client 2: Your supply at (99,99), [10,10,10] with distance 200 is delivered to a client at (20,20) [2,2,2].
+DEBUG: Waiting for notification (agent 1) on fd 4
+
+Noitf queue releasef for agent 1
+DEBUG: Done processing notifications for agent 2
+DEBUG: Got the notification (agent 1) on fd 4
+DEBUG: Notifying client (agent 1) on fd 4
+DEBUG: Waiting for notification (agent 2) on fd 4
+DEBUG: got the queue lock Notifying client (agent 1) on fd 4
+DEBUG: Done processing notifications for agent 1
+DEBUG: Waiting for notification (agent 1) on fd 4
+AGENT: Handled command: watch 180
+AGENT: Command: demand 5 0 0
+AGENT: Handled command: move 25 20
+AGENT: Handled command: supply 200 10 10 10
+Received command: demand 5 0 0
+AGENT: Command: supply 200 3 3 3
+AGENT: Command: listdemands
+Received command: supply 200 3 3 3
+DEBUG: Adding demand for agent 0 with resources [5,0,0]
+Received command: listdemands
+DEBUG: Checking matches for demand ID 0 from agent 0
+AGENT: Handled command: move 0 50
+DEBUG: Checking compatibility between demand 0 and supply 0
+DEBUG: Distance check: 1, Resource checks: [1,1,1], Agent check: 1
+AGENT: Command: demand 3 3 3
+DEBUG: Found match! Supplier agent: -1, Demander agent: -1, was it demand: 1
+DEBUG: Sending notifications for match
+Received command: demand 3 3 3
+Noitf queue lock for agent 2
+Noitf queue release for agent 2
+DEBUG: Got the notification (agent 2) on fd 4
+DEBUG: Notifying client (agent 2) on fd 4
+AGENT: Handled command: demand 5 0 0
+DEBUG: Adding supply for agent 1 at (25,20) with distance 200 and resources [3,3,3]
+AGENT: Command: supply 200 5 0 0
+DEBUG: got the queue lock Notifying client (agent 2) on fd 4
+Received command: supply 200 5 0 0
+DEBUG: Checking matches for supply ID 1 from agent 1
+DEBUG: Processing notification type 1 for agent 2
+DEBUG: Checking compatibility between demand 1 and supply 1
+DEBUG: Distance check: 1, Resource checks: [0,0,0], Agent check: 1
+DEBUG: Sending message to client 2: Your supply at (99,99), [5,10,10] with distance 200 is delivered to a client at (10,10) [5,0,0].
+DEBUG: Got the notification (agent 0) on fd 4
+
+DEBUG: Notifying client (agent 0) on fd 4
+DEBUG: Done processing notifications for agent 2
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+DEBUG: Waiting for notification (agent 2) on fd 4
+DEBUG: Processing notification type 0 for agent 0
+DEBUG: Sending message to client 0: Your demand at (10,10), [5,0,0] is fulfilled by a client at (99,99).
+DEBUG: Checking watch for agent 0 - watch distance: 180, manhattan distance: 25
+
+DEBUG: Sending notification for supply added
+DEBUG: Done processing notifications for agent 0
+DEBUG: Waiting for notification (agent 0) on fd 4
+Noitf queue lock for agent 0
+Noitf queue releasef for agent 0
+AGENT: Handled command: supply 200 3 3 3
+DEBUG: Got the notification (agent 0) on fd 4
+AGENT: Command: mydemands
+DEBUG: Notifying client (agent 0) on fd 4
+Received command: mydemands
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+DEBUG: Processing notification type 3 for agent 0
+DEBUG: Sending message to client 0: A supply [3,3,3] is inserted at (25,20).
+
+DEBUG: Done processing notifications for agent 0
+DEBUG: Waiting for notification (agent 0) on fd 4
+AGENT: Handled command: listdemands
+AGENT: Command: listsupplies
+Received command: listsupplies
+DEBUG: Adding demand for agent 3 with resources [3,3,3]
+DEBUG: Checking matches for demand ID 0 from agent 3
+DEBUG: Checking compatibility between demand 0 and supply 0
+DEBUG: Distance check: 1, Resource checks: [1,1,1], Agent check: 1
+DEBUG: Found match! Supplier agent: -1, Demander agent: -1, was it demand: 1
+DEBUG: Sending notifications for match
+Noitf queue lock for agent 2
+Noitf queue release for agent 2
+DEBUG: Got the notification (agent 2) on fd 4
+DEBUG: Adding supply for agent 0 at (10,10) with distance 200 and resources [5,0,0]
+AGENT: Handled command: demand 3 3 3
+DEBUG: Notifying client (agent 2) on fd 4
+DEBUG: Checking matches for supply ID 2 from agent 0
+AGENT: Command: supply 200 3 3 3
+DEBUG: got the queue lock Notifying client (agent 2) on fd 4
+DEBUG: Checking compatibility between demand 1 and supply 2
+Received command: supply 200 3 3 3
+DEBUG: Processing notification type 1 for agent 2
+DEBUG: Distance check: 1, Resource checks: [0,0,0], Agent check: 1
+DEBUG: Got the notification (agent 3) on fd 4
+DEBUG: Sending message to client 2: Your supply at (99,99), [2,7,7] with distance 200 is delivered to a client at (0,50) [3,3,3].
+DEBUG: Notifying client (agent 3) on fd 4
+
+DEBUG: got the queue lock Notifying client (agent 3) on fd 4
+DEBUG: Processing notification type 0 for agent 3
+DEBUG: Sending message to client 3: Your demand at (0,50), [3,3,3] is fulfilled by a client at (99,99).
+DEBUG: Done processing notifications for agent 2
+
+DEBUG: Waiting for notification (agent 2) on fd 4
+DEBUG: Done processing notifications for agent 3
+DEBUG: Waiting for notification (agent 3) on fd 4
+DEBUG: Checking watch for agent 1 - watch distance: 180, manhattan distance: 20
+DEBUG: Sending notification for supply added
+Noitf queue lock for agent 1
+Noitf queue releasef for agent 1
+DEBUG: Got the notification (agent 1) on fd 4
+AGENT: Handled command: supply 200 5 0 0
+DEBUG: Notifying client (agent 1) on fd 4
+AGENT: Command: mydemands
+DEBUG: got the queue lock Notifying client (agent 1) on fd 4
+Received command: mydemands
+DEBUG: Processing notification type 3 for agent 1
+DEBUG: Sending message to client 1: A supply [5,0,0] is inserted at (10,10).
+
+DEBUG: Done processing notifications for agent 1
+DEBUG: Waiting for notification (agent 1) on fd 4
+AGENT: Handled command: mydemands
+AGENT: Command: mysupplies
+Received command: mysupplies
+AGENT: Handled command: listsupplies
+AGENT: Command: move 50 50
+Received command: move 50 50
+DEBUG: Adding supply for agent 3 at (0,50) with distance 200 and resources [3,3,3]
+DEBUG: Checking matches for supply ID 3 from agent 3
+DEBUG: Checking compatibility between demand 1 and supply 3
+DEBUG: Distance check: 1, Resource checks: [0,0,0], Agent check: 1
+DEBUG: Checking watch for agent 0 - watch distance: 180, manhattan distance: 50
+DEBUG: Sending notification for supply added
+Noitf queue lock for agent 0
+Noitf queue releasef for agent 0
+DEBUG: Checking watch for agent 1 - watch distance: 180, manhattan distance: 50
+DEBUG: Sending notification for supply added
+DEBUG: Got the notification (agent 0) on fd 4
+Noitf queue lock for agent 1
+DEBUG: Notifying client (agent 0) on fd 4
+Noitf queue releasef for agent 1
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+DEBUG: Processing notification type 3 for agent 0
+DEBUG: Got the notification (agent 1) on fd 4
+DEBUG: Notifying client (agent 1) on fd 4
+DEBUG: Sending message to client 0: A supply [3,3,3] is inserted at (0,50).
+DEBUG: got the queue lock Notifying client (agent 1) on fd 4
+AGENT: Handled command: supply 200 3 3 3
+
+DEBUG: Processing notification type 3 for agent 1
+AGENT: Command: mydemands
+DEBUG: Sending message to client 1: A supply [3,3,3] is inserted at (0,50).
+Received command: mydemands
+
+DEBUG: Done processing notifications for agent 0
+DEBUG: Done processing notifications for agent 1
+DEBUG: Waiting for notification (agent 1) on fd 4
+DEBUG: Waiting for notification (agent 0) on fd 4
+AGENT: Handled command: mydemands
+AGENT: Command: mysupplies
+Received command: mysupplies
+AGENT: Handled command: mysupplies
+AGENT: Command: unwatch
+AGENT: Handled command: move 50 50
+Received command: unwatch
+AGENT: Command: supply 200 5 5 5
+Received command: supply 200 5 5 5
+AGENT: Handled command: unwatch
+AGENT: Handled command: mydemands
+AGENT: Command: mysupplies
+Received command: mysupplies
+AGENT: Handled command: mysupplies
+DEBUG: Adding supply for agent 2 at (50,50) with distance 200 and resources [5,5,5]
+AGENT: Command: supply 200 13 13 13
+DEBUG: Checking matches for supply ID 4 from agent 2
+Received command: supply 200 13 13 13
+DEBUG: Checking compatibility between demand 1 and supply 4
+DEBUG: Distance check: 1, Resource checks: [0,0,0], Agent check: 0
+DEBUG: Checking watch for agent 0 - watch distance: 180, manhattan distance: 80
+DEBUG: Sending notification for supply added
+Noitf queue lock for agent 0
+Noitf queue releasef for agent 0
+AGENT: Handled command: supply 200 5 5 5
+DEBUG: Got the notification (agent 0) on fd 4
+AGENT: Command: listdemands
+DEBUG: Notifying client (agent 0) on fd 4
+Received command: listdemands
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+DEBUG: Processing notification type 3 for agent 0
+DEBUG: Sending message to client 0: A supply [5,5,5] is inserted at (50,50).
+
+DEBUG: Done processing notifications for agent 0
+DEBUG: Waiting for notification (agent 0) on fd 4
+AGENT: Handled command: mysupplies
+AGENT: Command: demand 5 0 0
+DEBUG: Adding supply for agent 0 at (10,10) with distance 200 and resources [13,13,13]
+Received command: demand 5 0 0
+DEBUG: Checking matches for supply ID 5 from agent 0
+DEBUG: Checking compatibility between demand 1 and supply 5
+DEBUG: Distance check: 1, Resource checks: [1,1,1], Agent check: 1
+DEBUG: Found match! Supplier agent: -1, Demander agent: -1, was it demand: 0
+DEBUG: Sending notifications for match
+Noitf queue lock for agent 0
+Noitf queue release for agent 0
+DEBUG: Got the notification (agent 0) on fd 4
+DEBUG: Got the notification (agent 2) on fd 4
+DEBUG: Notifying client (agent 0) on fd 4
+DEBUG: Notifying client (agent 2) on fd 4
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+DEBUG: got the queue lock Notifying client (agent 2) on fd 4
+DEBUG: Processing notification type 1 for agent 0
+DEBUG: Processing notification type 0 for agent 2
+DEBUG: Sending message to client 0: Your supply at (10,10), [13,13,13] with distance 200 is delivered to a client at (99,99) [10,10,10].
+DEBUG: Sending message to client 2: Your demand at (99,99), [10,10,10] is fulfilled by a client at (10,10).
+
+
+DEBUG: Done processing notifications for agent 0
+DEBUG: Waiting for notification (agent 0) on fd 4
+DEBUG: Done processing notifications for agent 2
+DEBUG: Waiting for notification (agent 2) on fd 4
+AGENT: Handled command: supply 200 13 13 13
+AGENT: Command: listdemands
+Received command: listdemands
+AGENT: Handled command: listdemands
+DEBUG: Adding demand for agent 3 with resources [5,0,0]
+AGENT: Command: listsupplies
+DEBUG: Checking matches for demand ID 0 from agent 3
+Received command: listsupplies
+DEBUG: Checking compatibility between demand 0 and supply 0
+DEBUG: Distance check: 1, Resource checks: [0,1,1], Agent check: 1
+DEBUG: Checking compatibility between demand 0 and supply 1
+DEBUG: Distance check: 1, Resource checks: [0,1,1], Agent check: 1
+DEBUG: Checking compatibility between demand 0 and supply 2
+DEBUG: Distance check: 1, Resource checks: [1,1,1], Agent check: 1
+DEBUG: Found match! Supplier agent: -1, Demander agent: -1, was it demand: 1
+DEBUG: Sending notifications for match
+Noitf queue lock for agent 0
+Noitf queue release for agent 0
+DEBUG: Got the notification (agent 0) on fd 4
+DEBUG: Got the notification (agent 3) on fd 4
+DEBUG: Notifying client (agent 0) on fd 4
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+DEBUG: Notifying client (agent 3) on fd 4
+DEBUG: Processing notification type 1 for agent 0
+DEBUG: got the queue lock Notifying client (agent 3) on fd 4
+DEBUG: Sending message to client 0: Your supply at (10,10), [0,0,0] with distance 200 is delivered to a client at (0,50) [5,0,0].
+DEBUG: Processing notification type 0 for agent 3
+
+DEBUG: Sending message to client 3: Your demand at (0,50), [5,0,0] is fulfilled by a client at (10,10).
+DEBUG: Done processing notifications for agent 0
+
+DEBUG: Waiting for notification (agent 0) on fd 4
+AGENT: Handled command: demand 5 0 0
+AGENT: Command: supply 200 5 0 0
+Received command: supply 200 5 0 0
+DEBUG: Adding supply for agent 3 at (0,50) with distance 200 and resources [5,0,0]
+DEBUG: Checking matches for supply ID 6 from agent 3
+AGENT: Handled command: listdemands
+DEBUG: Done processing notifications for agent 3
+AGENT: Command: listsupplies
+DEBUG: Waiting for notification (agent 3) on fd 4
+Received command: listsupplies
+DEBUG: Checking watch for agent 0 - watch distance: 180, manhattan distance: 50
+DEBUG: Sending notification for supply added
+Noitf queue lock for agent 0
+Noitf queue releasef for agent 0
+DEBUG: Got the notification (agent 0) on fd 4
+AGENT: Handled command: supply 200 5 0 0
+DEBUG: Notifying client (agent 0) on fd 4
+AGENT: Command: supply 200 5 0 0
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+Received command: supply 200 5 0 0
+DEBUG: Processing notification type 3 for agent 0
+DEBUG: Sending message to client 0: A supply [5,0,0] is inserted at (0,50).
+
+DEBUG: Done processing notifications for agent 0
+DEBUG: Waiting for notification (agent 0) on fd 4
+AGENT: Handled command: listsupplies
+AGENT: Command: mydemands
+Received command: mydemands
+DEBUG: Adding supply for agent 3 at (0,50) with distance 200 and resources [5,0,0]
+AGENT: Handled command: listsupplies
+DEBUG: Checking matches for supply ID 7 from agent 3
+AGENT: Command: mydemands
+Received command: mydemands
+DEBUG: Checking watch for agent 0 - watch distance: 180, manhattan distance: 50
+DEBUG: Sending notification for supply added
+Noitf queue lock for agent 0
+Noitf queue releasef for agent 0
+DEBUG: Got the notification (agent 0) on fd 4
+AGENT: Handled command: supply 200 5 0 0
+DEBUG: Notifying client (agent 0) on fd 4
+AGENT: Command: listdemands
+DEBUG: got the queue lock Notifying client (agent 0) on fd 4
+Received command: listdemands
+DEBUG: Processing notification type 3 for agent 0
+DEBUG: Sending message to client 0: A supply [5,0,0] is inserted at (0,50).
+
+DEBUG: Done processing notifications for agent 0
+DEBUG: Waiting for notification (agent 0) on fd 4
+AGENT: Handled command: mydemands
+AGENT: Command: mysupplies
+Received command: mysupplies
+AGENT: Handled command: mydemands
+AGENT: Command: mysupplies
+Received command: mysupplies
+AGENT: Handled command: listdemands
+AGENT: Command: listsupplies
+Received command: listsupplies
+AGENT: Handled command: mysupplies
+AGENT: Handled command: mysupplies
+AGENT: Handled command: listsupplies
+AGENT: Command: mydemands
+Received command: mydemands
+AGENT: Handled command: mydemands
+AGENT: Command: mysupplies
+Received command: mysupplies
+AGENT: Handled command: mysupplies
+Client closed connection
+Client closed connection
+Client closed connection
+Client closed connection
+Agent process finished for client 4
+Agent process finished for client 4
+Agent process finished for client 4
+Agent process finished for client 4
+DEBUG: Agent 1 cleanup complete
+DEBUG: Agent 2 cleanup complete
+DEBUG: Agent 3 cleanup complete
+DEBUG: Agent 0 cleanup complete
+Accepted client connection 4
+Agent process started for client 4
+Next agent id: 4
+DEBUG: Waiting for notification (agent 4) on fd 4
+AGENT: Command: listdemands
+Received command: listdemands
+AGENT: Handled command: listdemands
+AGENT: Command: listsupplies
+Received command: listsupplies
+AGENT: Handled command: listsupplies
+Client closed connection
+Agent process finished for client 4
+DEBUG: Agent 4 cleanup complete

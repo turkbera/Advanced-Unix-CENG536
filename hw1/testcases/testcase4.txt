@@ -1,0 +1,12 @@
+move 0 50
+demand 3 3 3
+supply 200 3 3 3
+mydemands
+mysupplies
+demand 5 0 0
+supply 200 5 0 0
+supply 200 5 0 0
+listdemands
+listsupplies
+mydemands
+mysupplies

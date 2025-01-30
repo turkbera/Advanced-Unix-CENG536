@@ -1,0 +1,8 @@
+Client 0: Connecting to Unix domain socket at '/tmp/supdemserv.sock'
+Client 0: Running script 'testcase0.txt'
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 0 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+

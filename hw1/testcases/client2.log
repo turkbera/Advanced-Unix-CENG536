@@ -1,0 +1,19 @@
+Client 0: Connecting to Unix domain socket at '/tmp/supdemserv.sock'
+Client 0: Running script 'testcase2.txt'
+OK
+OK
+Your demand at (20,20), [2,2,2] is fulfilled by a supply at (10,10).
+OK
+OK
+OK
+A supply [3,3,3] is inserted at (25,20).
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 1 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+     25|     20|    3|    3|    3|    200|
+OK
+Your supply at (25,20), [3,3,3] with distance 200 is delivered to a demand at (0,50) [3,3,3].
+Your supply is removed from map.

@@ -1,0 +1,11 @@
+move 10 10
+watch 180
+demand 5 0 0
+supply 200 5 0 0
+mydemands
+mysupplies
+supply 200 13 13 13
+listdemands
+listsupplies
+mydemands
+mysupplies

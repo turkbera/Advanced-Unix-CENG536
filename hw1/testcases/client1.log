@@ -1,0 +1,40 @@
+Client 0: Connecting to Unix domain socket at '/tmp/supdemserv.sock'
+Client 0: Running script 'testcase1.txt'
+OK
+OK
+OK
+OK
+Your demand at (10,10), [5,0,0] is fulfilled by a supply at (10,10).
+Your supply at (10,10), [5,0,0] with distance 200 is delivered to a demand at (10,10) [5,0,0].
+Your supply is removed from map.
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 0 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+OK
+A supply [13,13,13] is inserted at (10,10).
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+Your supply at (10,10), [13,13,13] with distance 200 is delivered to a demand at (20,20) [2,2,2].
+A supply [3,3,3] is inserted at (25,20).
+There are 2 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+     10|     10|   11|   11|   11|    200|
+     25|     20|    3|    3|    3|    200|
+There are 0 demands in total.
+X | Y | A | B | C |
+-------+-------+-----+-----+-----+
+There are 1 supplies in total.
+X | Y | A | B | C | D |
+-------+-------+-----+-----+-----+-------+
+     10|     10|   11|   11|   11|    200|
+Your supply at (10,10), [11,11,11] with distance 200 is delivered to a demand at (99,99) [10,10,10].
+A supply [10,10,10] is inserted at (99,99).
+A supply [5,5,5] is inserted at (50,50).
+A supply [3,3,3] is inserted at (0,50).
+A supply [5,0,0] is inserted at (0,50).
+A supply [5,0,0] is inserted at (0,50).
